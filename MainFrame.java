@@ -12,7 +12,7 @@ public class MainFrame {
 
 class MainFrameLayout {
     static JFrame MainFrame = new JFrame();
-    static JFrame CustFrame = new JFrame();
+    // static JFrame CustFrame = new JFrame();
 
     MainFrameLayout() {
         MainFrame.setSize(500, 500);
@@ -51,10 +51,11 @@ class Components extends MainFrameLayout {
 
                 switch (btnId) {
                     case 1:
-                        new CustFrame();
+                        new CustComponents("");
                         break;
 
                     case 2:
+                        new BillComponents("");
                         break;
                 }
 
